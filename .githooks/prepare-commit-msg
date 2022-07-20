@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+if not /.*\[ref: [0-9]*\].*/.match(ARGV[1])
+    puts "Invalid commit message format !"
+    exit 1
+end
